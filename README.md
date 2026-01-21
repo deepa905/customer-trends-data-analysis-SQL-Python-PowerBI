@@ -1,55 +1,111 @@
-# 👨🏻‍💻Customer Behavior Data Analyst Portfolio Project
-This project represents a complete, industry standard, end-to-end data analytics workflow, designed to mirror the real responsibilities of professional analysts in modern business environments. The project encompasses all critical stages of data analysis, from data preparation and modeling to insight generation, visualization, and reporting.
+**Customer Shopping Behavior Analysis**
 
 
-## 📌 Project Overview
-The goal of this project is to simulate a corporate-grade end-to-end data analytics workflow, demonstrating the ability to translate raw data into strategic business intelligence by:
+**Project Overview**
 
-✅ Data Preparation,Modeling & Exploratory Data Analysis (Python): Clean and transform the raw dataset for analysis.
+This project analyzes customer shopping behavior using transactional data to identify revenue drivers, discount usage patterns, and the impact of subscriptions on customer spending. The objective is to support data-driven business decisions related to marketing strategy, promotions, and customer engagement.
 
-✅ Data Analysis (SQL): Simulate business transactions, and run queries to extract insights on customer segments, loyalty, and purchase drivers.
+The project demonstrates an end-to-end data analytics workflow using Python, SQL, and Power BI.
 
-✅ Visualization & Insights (Power BI): Build an interactive dashboard that highlights key patterns and trends, enabling stakeholders to make data-driven decisions.
+**Business Objective**
 
-✅ Report and Presentation: Write a clear project report summarizing your key findings and business recommendations. Prepare a presentation that visually communicates insights and actionable recommendations to stakeholders.
+To answer key business questions such as:
 
+1. Which customer and product attributes drive revenue?
 
-  How to use the repository
-   ```
-2. **Open Customer_Shopping_Behavior_Analysis.ipynb notebook**
+2. How effective are discounts in influencing purchase behavior?
 
-    This file contains:
+3. Do subscribed customers spend more than non-subscribers?
 
-      - Data Import
+4. How do operational factors like shipping type affect spending?
 
-      - Data exploration
+**Dataset Summary**
 
-      - Data cleaning
+Records: 3,900 transactions
 
-      - Connection to SQL Database
-  
-3. **Load the data from Python notebook into MySQL/PostgreSQL/MS SQL Server**
+Features: 18 columns
 
-      - Create a database in SQL
+Data Type: Transaction-level retail data
 
-      - Run Python code to load data into SQL database
-  
-      - Open **customer_behavior_sql_queries.sql**
-  
-      - Answer Business Questions using SQL Queries 
-      
-4. **Connect the SQL Database to Power BI**
+Key attributes include:
 
-      - Open **customer_behavior_dashboard.pbix**
-   
-      - Create interactive dashboard in Power BI
-  
-6. **Create Project Report and Presentation**
+Customer demographics (Age, Gender, Location)
 
-      - Create project report
-   
-      - Build presentation deck using Gamma AI
-  
+Purchase details (Category, Item, Purchase Amount)
 
+Engagement indicators (Previous Purchases, Subscription Status)
 
+Promotions (Discount Applied)
 
+Operations (Shipping Type, Payment Method)
+
+Customer feedback (Review Rating)
+
+**Tools & Technologies**
+
+Python: pandas, matplotlib, seaborn (EDA & data preparation)
+
+SQL: PostgreSQL (business-driven queries)
+
+Power BI: Interactive dashboard & KPIs
+
+Version Control: GitHub
+
+**Analysis Workflow**
+1. Data Preparation & EDA (Python)
+
+Cleaned and validated the dataset
+
+Handled missing values in review ratings
+
+Performed exploratory analysis to understand spending patterns
+
+Identified that customer behavior is non-linear and segment-driven
+
+2. Business Analysis (SQL)
+
+SQL queries were written to answer business questions such as:
+
+Revenue contribution by gender and age group
+
+High-value customers despite discounts
+
+Top-rated and most purchased products
+
+Subscription vs non-subscription spending
+
+Discount dependency across products
+
+3. Visualization & Insights (Power BI)
+
+Designed a one-page dashboard with:
+
+KPI cards (Revenue, Avg Spend, % Subscribers, % Discounted Transactions)
+
+Revenue and spending breakdowns
+
+Discount and subscription impact analysis
+
+Dashboard visuals respond dynamically to filters
+
+**Key Insights**
+
+Revenue is driven primarily by product category, not age
+
+Discounts increase transaction frequency but not significantly transaction value
+
+Subscriptions support engagement rather than higher per-transaction spend
+
+Faster shipping options show slightly higher average purchase values
+
+Customer behavior is better explained through grouped analysis than linear trends
+
+**Business Recommendations**
+
+Optimize discount usage to avoid unnecessary margin loss
+
+Focus subscription strategies on engagement rather than price reductions
+
+Prioritize high-revenue categories in marketing and inventory planning
+
+Promote faster shipping options for higher-value transactions
