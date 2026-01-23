@@ -9,117 +9,113 @@ The objective is to support data-driven business decisions related to marketing 
 
 This repository demonstrates a complete end-to-end data analytics workflow, covering data exploration, business analysis, and dashboard-based storytelling.
 
-🎯 Business Problem
+🎯 **Business Problem**
 
 Businesses often struggle to understand:
 
-* First point Which customer and product attributes contribute most to revenue
+* Which customer and product attributes contribute most to revenue
 
-* second point Whether discounts actually increase spending
+* Whether discounts actually increase spending
 
-*Third point How subscription status affects customer behavior
+* How subscription status affects customer behavior
 
-How operational factors (shipping, seasonality) influence purchases
+* How operational factors (shipping, seasonality) influence purchases
 
-Key Question:
+**Key Question**:
 
 How can customer shopping data be used to uncover meaningful patterns and support better business decisions?
 
 🧩 Dataset Summary
 
-Records: 3,900 transactions
+* Records: 3,900 transactions
 
-Columns: 18
+* Columns: 18
 
-Data Type: Transaction-level retail data
+* Data Type: Transaction-level retail data
 
-Key attributes include:
+**Key attributes include**:
 
-Customer demographics (Age, Gender, Location)
+* Customer demographics (Age, Gender, Location)
 
-Purchase details (Category, Item Purchased, Purchase Amount)
+* Purchase details (Category, Item Purchased, Purchase Amount)
 
-Engagement indicators (Previous Purchases, Subscription Status)
+* Engagement indicators (Previous Purchases, Subscription Status)
 
-Promotions (Discount Applied)
+* Promotions (Discount Applied)
 
-Operations (Shipping Type, Payment Method)
+* Operations (Shipping Type, Payment Method)
 
-Customer feedback (Review Rating)
+* Customer feedback (Review Rating)
 
-Data Quality Note:
+***Data Quality Note***:
 The dataset was largely clean, with minimal missing values in review ratings. Basic data quality checks were performed before analysis.
 
-🛠️ Tools & Technologies
+🛠️ **Tools & Technologies**
 
-Python: pandas, matplotlib, seaborn (EDA & data preparation)
+* Python: pandas, matplotlib, seaborn (EDA & data preparation)
 
-SQL: PostgreSQL (business-driven queries)
+* SQL: PostgreSQL (business-driven queries)
 
-Power BI: Interactive dashboard & KPIs
+* Power BI: Interactive dashboard & KPIs
 
 Version Control: GitHub
 
-🔍 Analysis Workflow
+🔍 **Analysis Workflow**
 
-1️⃣ Data Preparation & Exploratory Analysis (Python)
+**1. Data Preparation & Exploratory Analysis (Python)**
 
-Checked for missing values, duplicates, and data types
+* Checked for missing values, duplicates, and data types
 
-Performed exploratory analysis to understand distributions and patterns
+* Performed exploratory analysis to understand distributions and patterns
 
-Created derived features (e.g., age groups) for better interpretability
+* Created derived features (e.g., age groups) for better interpretability
 
-Key observation:
+**Key observation**:
 Customer spending behavior is non-linear and varies significantly across categories and transaction attributes rather than showing simple linear trends.
 
-2️⃣ Business Analysis (SQL)
+**2️. Business Analysis (SQL)**
 
 SQL queries were written to answer specific business questions such as:
 
-Revenue contribution by gender and age group
+* Revenue contribution by gender and age group
 
-Identification of high-spending customers using discounts
+* Identification of high-spending customers using discounts
 
-Comparison of average spend across shipping types
+* Comparison of average spend across shipping types
 
-Subscription vs non-subscription spending
+* Subscription vs non-subscription spending
 
-Products with high discount dependency
+* Products with high discount dependency
 
-Top products within each category
+* Top products within each category
 
-The focus was on clear aggregation logic and business interpretation rather than complex SQL constructs.
-
-3️⃣ Visualization & Insights (Power BI)
-
-A one-page Power BI dashboard was designed to present insights clearly for stakeholders.
+**3️. Visualization & Insights (Power BI)**
 
 Dashboard Highlights:
 
-KPI Cards
+* KPI Cards
 
-Total Revenue
+* Total Revenue
 
-Total Customers
+* Total Customers
 
-Average Spend per Transaction
+* Average Spend per Transaction
 
-% Subscribers
+* % Subscribers
 
-% Discounted Transactions
+* % Discounted Transactions
 
-Key Visuals
+*Key Visuals*
 
-Revenue by product category
+* Revenue by product category
 
-Revenue by age group
+* Revenue by age group
 
-Average spend by subscription status
+* Average spend by subscription status
 
-Discount applied vs purchase amount
+* Discount applied vs purchase amount
 
-Shipping type vs average spend
+* Shipping type vs average spend
 
 Filters
 
@@ -127,46 +123,46 @@ Category, Age Group, Season, Subscription Status, Shipping Type
 
 All visuals and KPIs update dynamically based on filters.
 
-📊 Key Insights
+📊 **Key Insights**
 
-Revenue is driven primarily by product category, not customer age
+* Revenue is driven primarily by product category, not customer age
 
-Discounts increase transaction frequency but do not significantly increase transaction value
+* Discounts increase transaction frequency but do not significantly increase transaction value
 
-Subscribed customers do not spend more per transaction, but contribute to consistent engagement
+* Subscribed customers do not spend more per transaction, but contribute to consistent engagement
 
-Faster shipping options show slightly higher average purchase values
+* Faster shipping options show slightly higher average purchase values
 
-Customer behavior is better explained through grouped analysis than linear trends
+* Customer behavior is better explained through grouped analysis than linear trends
 
-✅ Business Recommendations
+✅ **Business Recommendations**
 
-Optimize discount usage by avoiding blanket promotions and focusing on price-sensitive products
+* Optimize discount usage by avoiding blanket promotions and focusing on price-sensitive products
 
-Position subscriptions as engagement tools rather than price-reduction mechanisms
+* Position subscriptions as engagement tools rather than price-reduction mechanisms
 
-Prioritize high-revenue categories for marketing and inventory planning
+* Prioritize high-revenue categories for marketing and inventory planning
 
-Promote faster shipping options for higher-value customer segment
+* Promote faster shipping options for higher-value customer segment
 
-🚀 Future Enhancements
+🚀 **Future Enhancements**
 
-Time-series trend analysis
+* Time-series trend analysis
 
-Customer lifetime value (CLV)
+* Customer lifetime value (CLV)
 
-Repeat-purchase or churn analysis
+* Repeat-purchase or churn analysis
 
-A/B testing of discount strategies
+* A/B testing of discount strategies
 
-🧠 Key Learnings
+🧠 **Key Learnings**
 
-Translating business questions into analytical workflows
+* Translating business questions into analytical workflows
 
-Handling real-world, transaction-level data
+* Handling real-world, transaction-level data
 
-Designing KPI-driven dashboards
+* Designing KPI-driven dashboards
 
-Integrating Python, SQL, and Power BI into a cohesive analytics project
+* Integrating Python, SQL, and Power BI into a cohesive analytics project
 
-Communicating insights clearly to non-technical stakeholders
+* Communicating insights clearly to non-technical stakeholders
