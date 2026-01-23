@@ -149,6 +149,26 @@ Prioritize high-revenue categories for marketing and inventory planning
 
 Promote faster shipping options for higher-value customer segments
 
+customer-trends-data-analysis-SQL-Python-PowerBI/
+│
+├── data/
+│   └── customer_shopping_behavior.csv
+│
+├── python/
+│   └── customer_behavior_eda.ipynb
+│
+├── sql/
+│   └── customer_behavior_queries.sql
+│
+├── powerbi/
+│   └── customer_behavior_dashboard.pbix
+│
+├── images/
+│   └── dashboard_preview.png   (optional)
+│
+└── README.md
+
+
 🚀 Future Enhancements
 
 Time-series trend analysis
