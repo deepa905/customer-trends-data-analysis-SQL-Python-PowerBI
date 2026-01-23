@@ -61,6 +61,7 @@ Power BI: Interactive dashboard & KPIs
 Version Control: GitHub
 
 🔍 Analysis Workflow
+
 1️⃣ Data Preparation & Exploratory Analysis (Python)
 
 Checked for missing values, duplicates, and data types
