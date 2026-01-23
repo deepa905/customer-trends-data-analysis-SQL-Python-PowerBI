@@ -1,11 +1,12 @@
-Q1. Revenue Contribution by Gender
-Which gender segment contributes more to total revenue, and should marketing strategies be gender-focused?
+**1. Which gender segment contributes more to total revenue, and should marketing strategies be gender-focused?**
+       
 SELECT gender,
        SUM(purchase_amount) AS revenue
 FROM customer
 GROUP BY gender;
-Q2. High-Value Customers Despite Discounts
-Are there customers who remain high spenders even when discounts are applied?
+
+**2. Are there customers who remain high spenders even when discounts are applied?**
+       
 SELECT customer_id,
        purchase_amount
 FROM customer
@@ -14,23 +15,26 @@ WHERE discount_applied = 'Yes'
       SELECT AVG(purchase_amount)
       FROM customer
   );
-Q3. Products with Highest Customer Satisfaction
-Which products receive the highest customer ratings and should be emphasized in marketing?
+
+**3. Which products receive the highest customer ratings and should be emphasized in marketing?**
+       
 SELECT item_purchased,
        ROUND(AVG(review_rating::numeric), 2) AS average_product_rating
 FROM customer
 GROUP BY item_purchased
 ORDER BY AVG(review_rating) DESC
 LIMIT 5;
-Q4. Impact of Shipping Speed on Spending
-Does faster shipping correlate with higher purchase value?
+
+**Q4. Does faster shipping correlate with higher purchase value?**
+       
 SELECT shipping_type,
        ROUND(AVG(purchase_amount), 2) AS avg_purchase_amount
 FROM customer
 WHERE shipping_type IN ('Standard', 'Express')
 GROUP BY shipping_type;
-Q5. Subscription Value Assessment
-Do subscribers generate more value than non-subscribers?
+
+**5. Do subscribers generate more value than non-subscribers?**
+       
 SELECT subscription_status,
        COUNT(customer_id) AS total_customers,
        ROUND(AVG(purchase_amount), 2) AS avg_spend,
@@ -38,9 +42,8 @@ SELECT subscription_status,
 FROM customer
 GROUP BY subscription_status
 ORDER BY total_revenue DESC, avg_spend DESC;
-Q6. Discount-Dependent Products
 
-Which products rely most heavily on discounts to drive sales?
+**6. Which products rely most heavily on discounts to drive sales?**
 SELECT item_purchased,
        ROUND(
          100.0 * SUM(CASE WHEN discount_applied = 'Yes' THEN 1 ELSE 0 END)
@@ -50,8 +53,8 @@ FROM customer
 GROUP BY item_purchased
 ORDER BY discount_rate DESC
 LIMIT 5;
-Q7. Customer Segmentation by Loyalty
-How is the customer base distributed across loyalty stages?
+
+**7. How is the customer base distributed across loyalty stages?**
 WITH customer_type AS (
     SELECT customer_id,
            previous_purchases,
@@ -66,8 +69,9 @@ SELECT customer_segment,
        COUNT(*) AS number_of_customers
 FROM customer_type
 GROUP BY customer_segment;
-Q8. Top Products Within Each Category
-Which products drive the most volume within each category?
+
+**8. Which products drive the most volume within each category?**
+       
 WITH item_counts AS (
     SELECT category,
            item_purchased,
@@ -85,8 +89,8 @@ SELECT item_rank,
        total_orders
 FROM item_counts
 WHERE item_rank <= 3;
-Q9. Repeat Buyers vs Subscription Adoption
-Are frequent buyers more likely to subscribe?
+
+**9. Are frequent buyers more likely to subscribe?**
 SELECT subscription_status,
        COUNT(customer_id) AS repeat_buyers
 FROM customer
@@ -99,6 +103,7 @@ SELECT age_group,
 FROM customer
 GROUP BY age_group
 ORDER BY total_revenue DESC;
+
 
 
 
