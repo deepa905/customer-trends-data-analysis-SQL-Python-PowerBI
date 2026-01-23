@@ -1,29 +1,35 @@
 **Customer Shopping Behavior Analysis**
 
+***End-to-End Data Analyst Project (Python | SQL | Power BI)***
 
-**Project Overview**
+📌 Project Overview
 
-This project analyzes customer shopping behavior using transactional data to identify revenue drivers, discount usage patterns, and the impact of subscriptions on customer spending. The objective is to support data-driven business decisions related to marketing strategy, promotions, and customer engagement.
+This project analyzes customer shopping behavior using transactional data to identify revenue drivers, discount usage patterns, and the impact of subscriptions on customer spending.
+The objective is to support data-driven business decisions related to marketing strategy, promotions, and customer engagement.
 
-The project demonstrates an end-to-end data analytics workflow using Python, SQL, and Power BI.
+This repository demonstrates a complete end-to-end data analytics workflow, covering data exploration, business analysis, and dashboard-based storytelling.
 
-**Business Objective**
+🎯 Business Problem
 
-To answer key business questions such as:
+Businesses often struggle to understand:
 
-1. Which customer and product attributes drive revenue?
+Which customer and product attributes contribute most to revenue
 
-2. How effective are discounts in influencing purchase behavior?
+Whether discounts actually increase spending
 
-3. Do subscribed customers spend more than non-subscribers?
+How subscription status affects customer behavior
 
-4. How do operational factors like shipping type affect spending?
+How operational factors (shipping, seasonality) influence purchases
 
-**Dataset Summary**
+Key Question:
+
+How can customer shopping data be used to uncover meaningful patterns and support better business decisions?
+
+🧩 Dataset Summary
 
 Records: 3,900 transactions
 
-Features: 18 columns
+Columns: 18
 
 Data Type: Transaction-level retail data
 
@@ -31,7 +37,7 @@ Key attributes include:
 
 Customer demographics (Age, Gender, Location)
 
-Purchase details (Category, Item, Purchase Amount)
+Purchase details (Category, Item Purchased, Purchase Amount)
 
 Engagement indicators (Previous Purchases, Subscription Status)
 
@@ -41,7 +47,10 @@ Operations (Shipping Type, Payment Method)
 
 Customer feedback (Review Rating)
 
-**Tools & Technologies**
+Data Quality Note:
+The dataset was largely clean, with minimal missing values in review ratings. Basic data quality checks were performed before analysis.
+
+🛠️ Tools & Technologies
 
 Python: pandas, matplotlib, seaborn (EDA & data preparation)
 
@@ -51,61 +60,112 @@ Power BI: Interactive dashboard & KPIs
 
 Version Control: GitHub
 
-**Analysis Workflow**
-1. Data Preparation & EDA (Python)
+🔍 Analysis Workflow
+1️⃣ Data Preparation & Exploratory Analysis (Python)
 
-Cleaned and validated the dataset
+Checked for missing values, duplicates, and data types
 
-Handled missing values in review ratings
+Performed exploratory analysis to understand distributions and patterns
 
-Performed exploratory analysis to understand spending patterns
+Created derived features (e.g., age groups) for better interpretability
 
-Identified that customer behavior is non-linear and segment-driven
+Key observation:
+Customer spending behavior is non-linear and varies significantly across categories and transaction attributes rather than showing simple linear trends.
 
-2. Business Analysis (SQL)
+2️⃣ Business Analysis (SQL)
 
-SQL queries were written to answer business questions such as:
+SQL queries were written to answer specific business questions such as:
 
 Revenue contribution by gender and age group
 
-High-value customers despite discounts
+Identification of high-spending customers using discounts
 
-Top-rated and most purchased products
+Comparison of average spend across shipping types
 
 Subscription vs non-subscription spending
 
-Discount dependency across products
+Products with high discount dependency
 
-3. Visualization & Insights (Power BI)
+Top products within each category
 
-Designed a one-page dashboard with:
+The focus was on clear aggregation logic and business interpretation rather than complex SQL constructs.
 
-KPI cards (Revenue, Avg Spend, % Subscribers, % Discounted Transactions)
+3️⃣ Visualization & Insights (Power BI)
 
-Revenue and spending breakdowns
+A one-page Power BI dashboard was designed to present insights clearly for stakeholders.
 
-Discount and subscription impact analysis
+Dashboard Highlights:
 
-Dashboard visuals respond dynamically to filters
+KPI Cards
 
-**Key Insights**
+Total Revenue
 
-Revenue is driven primarily by product category, not age
+Total Customers
 
-Discounts increase transaction frequency but not significantly transaction value
+Average Spend per Transaction
 
-Subscriptions support engagement rather than higher per-transaction spend
+% Subscribers
+
+% Discounted Transactions
+
+Key Visuals
+
+Revenue by product category
+
+Revenue by age group
+
+Average spend by subscription status
+
+Discount applied vs purchase amount
+
+Shipping type vs average spend
+
+Filters
+
+Category, Age Group, Season, Subscription Status, Shipping Type
+
+All visuals and KPIs update dynamically based on filters.
+
+📊 Key Insights
+
+Revenue is driven primarily by product category, not customer age
+
+Discounts increase transaction frequency but do not significantly increase transaction value
+
+Subscribed customers do not spend more per transaction, but contribute to consistent engagement
 
 Faster shipping options show slightly higher average purchase values
 
 Customer behavior is better explained through grouped analysis than linear trends
 
-**Business Recommendations**
+✅ Business Recommendations
 
-Optimize discount usage to avoid unnecessary margin loss
+Optimize discount usage by avoiding blanket promotions and focusing on price-sensitive products
 
-Focus subscription strategies on engagement rather than price reductions
+Position subscriptions as engagement tools rather than price-reduction mechanisms
 
-Prioritize high-revenue categories in marketing and inventory planning
+Prioritize high-revenue categories for marketing and inventory planning
 
-Promote faster shipping options for higher-value transactions
+Promote faster shipping options for higher-value customer segments
+
+🚀 Future Enhancements
+
+Time-series trend analysis
+
+Customer lifetime value (CLV)
+
+Repeat-purchase or churn analysis
+
+A/B testing of discount strategies
+
+🧠 Key Learnings
+
+Translating business questions into analytical workflows
+
+Handling real-world, transaction-level data
+
+Designing KPI-driven dashboards
+
+Integrating Python, SQL, and Power BI into a cohesive analytics project
+
+Communicating insights clearly to non-technical stakeholders
