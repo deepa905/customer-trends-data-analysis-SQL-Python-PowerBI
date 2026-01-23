@@ -13,11 +13,11 @@ This repository demonstrates a complete end-to-end data analytics workflow, cove
 
 Businesses often struggle to understand:
 
-Which customer and product attributes contribute most to revenue
+* First point Which customer and product attributes contribute most to revenue
 
-Whether discounts actually increase spending
+* second point Whether discounts actually increase spending
 
-How subscription status affects customer behavior
+*Third point How subscription status affects customer behavior
 
 How operational factors (shipping, seasonality) influence purchases
 
