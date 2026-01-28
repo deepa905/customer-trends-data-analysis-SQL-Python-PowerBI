@@ -123,6 +123,13 @@ Category, Age Group, Season, Subscription Status, Shipping Type
 
 All visuals and KPIs update dynamically based on filters.
 
+<img width="725" height="375" alt="Screenshot 2026-01-28 103207" src="https://github.com/user-attachments/assets/51cb8d8c-a253-4119-88b9-dacef4b9d618" />
+
+
+
+
+
+
 📊 **Key Insights**
 
 * Revenue is driven primarily by product category, not customer age
