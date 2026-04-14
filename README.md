@@ -173,3 +173,5 @@ All visuals and KPIs update dynamically based on filters.
 * Integrating Python, SQL, and Power BI into a cohesive analytics project
 
 * Communicating insights clearly to non-technical stakeholders
+
+***This project is based on/forked from github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI, with significant modifications.***
